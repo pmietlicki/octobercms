@@ -1,4 +1,4 @@
-FROM php:5.7-fpm
+FROM php:7.0-fpm
 
 # install the PHP extensions we need
 RUN apt-get update && apt-get install -y git-core libsqlite3-dev libpq-dev libmcrypt-dev libpng12-dev libjpeg-dev && rm -rf /var/lib/apt/lists/* \
